@@ -39,27 +39,55 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
 
-    // Check for saved theme in localStorage
+  // only run if the element exists on the page
+  if (themeToggle) {
+    // restore saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
-        body.classList.add('dark');
-        themeToggle.checked = true;
+      body.classList.add('dark');
+      themeToggle.checked = true;
+    } else {
+      body.classList.remove('dark');
     }
 
-    // Toggle theme and save preference
+    // toggle handler
     themeToggle.addEventListener('change', () => {
-        if (themeToggle.checked) {
-            body.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        }
+      if (themeToggle.checked) {
+        body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
     });
+  }
 });
+// simple, robust menu toggle functions used by your onclick attributes
+function showMenu() {
+  const nav = document.getElementById('navlinks');
+  if (!nav) return;
+  nav.classList.add('show');
+}
+
+function hideMenu() {
+  const nav = document.getElementById('navlinks');
+  if (!nav) return;
+  nav.classList.remove('show');
+}
+
+// Optional: close the mobile menu when user clicks outside or on a link (nice UX)
+document.addEventListener('click', (e) => {
+  const nav = document.getElementById('navlinks');
+  if (!nav) return;
+  // if clicked a link inside nav, close
+  if (e.target.closest('.navlinks a')) {
+    nav.classList.remove('show');
+  }
+});
+
 
 
 
