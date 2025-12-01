@@ -746,3 +746,29 @@ button, .herobtn, .redbtn {
 }
 
 /* end of PART 3 */
+/* Fix: Navbar color on sub-pages */
+.subheader nav {
+    background: #ffffff;       /* Solid white background */
+    padding: 10px 0;
+}
+
+.subheader nav img {
+    filter: none;              /* Make logo original colors */
+}
+
+.subheader nav ul li a {
+    color: #111 !important;    /* Make text black */
+    font-weight: 600;
+}
+
+.subheader nav .fa {
+    color: #111 !important;    /* Make hamburger + close icon black */
+}
+/* Mobile menu fix on sub-pages */
+.subheader .navlinks {
+    background: rgba(0,0,0,0.95);  
+}
+
+.subheader .navlinks ul li a {
+    color: #fff !important;
+}
