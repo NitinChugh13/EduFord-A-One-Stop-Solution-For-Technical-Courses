@@ -87,6 +87,15 @@ document.addEventListener('click', (e) => {
     nav.classList.remove('show');
   }
 });
+// Optional: close the mobile menu when user clicks outside or on a link (nice UX)
+document.addEventListener('click', (e) => {
+  const nav = document.getElementById('navlinks');
+  if (!nav) return;
+  // if clicked a link inside nav, close
+  if (e.target.closest('.navlinks a')) {
+    nav.classList.remove('show');
+  }
+});
 
 
 
