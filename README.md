@@ -59,4 +59,6 @@ Courses: <br>
 ![EduFord Homepage](Images/courses.png)<br>
 Faculty:
 ![EduFord Homepage](Images/faculty.png)<br>
+Review:
+![EduFord Homepage](Images/review.png)<br>
 
