@@ -51,7 +51,10 @@ open index.html
 
 
 📸 Screenshots
-![EduFord Homepage](images/screenshot-home.png)
-![EduFord Homepage](images/about.png)
-![EduFord Homepage](images/courses.png)
+Home: <br>
+![EduFord Homepage](Images/home.png)<br>
+About: <br>
+![EduFord Homepage](Images/about.png)<br>
+Courses: <br>
+![EduFord Homepage](Images/courses.png)<br>
 
