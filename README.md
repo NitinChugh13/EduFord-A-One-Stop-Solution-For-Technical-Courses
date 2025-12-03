@@ -1,4 +1,5 @@
 📘 EduFord – Modern Educational Website
+Live at : https://eduford-a-one-stop-solution-for-nuqo.onrender.com
 
 EduFord is a fully responsive and visually engaging educational website built using HTML, CSS, and JavaScript.
 It showcases a complete multi-page layout designed for schools, coaching institutes, colleges, or any learning platform.
@@ -46,3 +47,11 @@ Double-click the file
 OR
 
 open index.html
+
+
+
+📸 Screenshots
+![EduFord Homepage](images/screenshot-home.png)
+![EduFord Homepage](images/about.png)
+![EduFord Homepage](images/courses.png)
+
